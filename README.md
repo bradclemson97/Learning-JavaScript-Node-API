@@ -34,7 +34,7 @@ This is a demonstration of building a RESTful API with Node.js. Making use of th
 
 ### Help
 
-The server is hoted on port 3000 and routes to the API are via http://localhost:3000/*.
+The server is currently configured to be hosted on port 3000 and routes to the API are via http://localhost:3000/*.
 
 Avoid using nodemon when writing to the JavaScript object. The resetting of the server means based on code changes means that when the .json file containing the JavaScript obejct is updated, the server will restart during runtime. 
 
