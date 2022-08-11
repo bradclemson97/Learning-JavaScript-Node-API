@@ -1,6 +1,6 @@
 # Learning-JavaScript-Node-API
 
-This is a demonstration of building a RESTful API with Node.js. Making use of the Node.js frammework 'express', HTTP requests are dealt with based on users’ “route”. A route is a path on the server like http://yourserver.com/path/to/route. This example API handles routes and call-backs for the user to asynchronously add, retrieve and search for values stored in a key-value JavaScript object. The JavaScript object is stored in a very simple database using local JSON files and the node.js "fs"(file-system) package. 
+This is a demonstration of building a RESTful API with Node.js. Making use of the Node.js frammework 'express', HTTP requests are dealt with based on users’ “route”. A route is a path on the server like http://yourserver.com/path/to/route. This example API handles routes and call-backs for the user to asynchronously submit (using a HTTP POST method), add and search for values stored in a key-value JavaScript object. The JavaScript object is stored in a very simple database using local JSON files and the node.js "fs"(file-system) package. 
 
 ## Getting Started
 
@@ -8,6 +8,8 @@ This is a demonstration of building a RESTful API with Node.js. Making use of th
 
 * Node
 * Express
+* Cors
+* Body-parser
 
 ### Installing
 
@@ -15,19 +17,24 @@ This is a demonstration of building a RESTful API with Node.js. Making use of th
    ```sh
    $ node --version
    ```
-2. Install express 
-   ```sh
-   $ npm install express --save
-   ```
-3. Clone the repo
+2. Clone the repo
    ```sh
    git clone https://github.com/bradclemson97/Learning-JavaScript-Node-API.git
    ```
-4. Point to the project directory, start the server
+3. Install express 
+   ```sh
+   $ npm install express --save
+   ```
+4. Add the node packages "cors" for Cross-Origin Resource Sharing and "body-parser" to help with parsing the body of a POST request.
+   ```sh
+   $ npm install cors --save
+   $ npm install body-parser --save
+   ```
+5. Point to the project directory, start the server
    ```sh
    $ node server.js
    ```
-5. Optional: configure server to restart whenever the code is changed
+6. Optional: configure server to restart whenever the code is changed
    ```sh
    $ sudo npm install nodemon -g
    ```
